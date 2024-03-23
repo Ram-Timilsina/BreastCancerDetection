@@ -1,0 +1,4 @@
+<h1>Patient Data</h1>
+{% for data in all_data %}
+<li><a href="{% url 'predict_diagnosis' data.id %}">{{data.id}} -> {{data.name}}</a></li>
+{% endfor %}
